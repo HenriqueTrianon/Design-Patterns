@@ -5,9 +5,15 @@ VisualStudioVersion = 15.0.28307.489
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AbstractFactory", "AbstractFactory\AbstractFactory.csproj", "{1D3E69BF-0E66-41BF-A4C3-1F9375FD95D5}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DesignPatternsTests", "DesignPatternsTests\DesignPatternsTests.csproj", "{16EF442A-66E4-43A9-9BC1-5EABE93D1B46}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DesignPatternsTests", "DesignPatternsTests\DesignPatternsTests.csproj", "{16EF442A-66E4-43A9-9BC1-5EABE93D1B46}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Adapter", "Adapter\Adapter.csproj", "{F4E4447C-65C0-4F2B-8B6F-5F954BE3B02A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Adapter", "Adapter\Adapter.csproj", "{F4E4447C-65C0-4F2B-8B6F-5F954BE3B02A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Creational", "Creational", "{BBBD4C73-8A64-488A-A294-B1D6F3DF05CF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Structural", "Structural", "{6C1984DF-7DEA-4731-862F-90C256A37FE3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Behavioral", "Behavioral", "{D0D98C26-A51B-46AF-9995-04ECD6026F36}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -30,6 +36,10 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{1D3E69BF-0E66-41BF-A4C3-1F9375FD95D5} = {BBBD4C73-8A64-488A-A294-B1D6F3DF05CF}
+		{F4E4447C-65C0-4F2B-8B6F-5F954BE3B02A} = {6C1984DF-7DEA-4731-862F-90C256A37FE3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {C702C242-E687-46E8-9DA1-9BC193541950}
