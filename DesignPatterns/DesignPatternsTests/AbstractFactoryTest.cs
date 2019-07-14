@@ -1,8 +1,4 @@
-using System;
-using System.Collections;
 using System.Collections.Generic;
-using System.Net.Sockets;
-using AbstractFactory;
 using AbstractFactory.Factories;
 using AbstractFactory.Interfaces;
 using Xunit;
@@ -13,7 +9,7 @@ namespace DesignPatternsTests
     public class AbstractFactoryTest
     {
         private ITestOutputHelper Output { get; }
-        private List<IUnit> units { get; set; } = new List<IUnit>();
+        private List<IUnit> Units { get; } = new List<IUnit>();
         public AbstractFactoryTest(ITestOutputHelper output)
         {
             Output = output;
@@ -22,23 +18,22 @@ namespace DesignPatternsTests
         public void TestAsianFactory()
         {
             INationFactory nationFactory = new AsianFactory();
-            units.Add(nationFactory.CreateShortableRangeUnit());
-            units.Add(nationFactory.CreateLongableRangeUnit());
-            printUnits();
+            Units.Add(nationFactory.CreateShortableRangeUnit());
+            Units.Add(nationFactory.CreateLongableRangeUnit());
+            PrintUnits();
         }
         [Fact]
         public void TestEuropeanFactory()
         {
-            
             INationFactory nationFactory = new EuropeanFactory();
-            units.Add(nationFactory.CreateShortableRangeUnit());
-            units.Add(nationFactory.CreateLongableRangeUnit());
-            printUnits();
+            Units.Add(nationFactory.CreateShortableRangeUnit());
+            Units.Add(nationFactory.CreateLongableRangeUnit());
+            PrintUnits();
         }
 
-        private void printUnits()
+        private void PrintUnits()
         {
-            foreach (var unit in units)
+            foreach (var unit in Units)
             {
                 Output.WriteLine($" {unit.Name}");
             }

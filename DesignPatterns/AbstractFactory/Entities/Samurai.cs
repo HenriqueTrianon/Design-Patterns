@@ -4,10 +4,8 @@ namespace AbstractFactory.Entities
 {
     public class Samurai:IShortableRangeUnit
     {
-        public string Name
-        {
-            get => "Samurai";
-        }
+        public string Name => "Samurai";
+
         public void Hit()
         {
             
