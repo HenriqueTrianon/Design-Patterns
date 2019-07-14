@@ -40,3 +40,4 @@
 Right now the only implemented examples are...
 
   - **Abstract Factory**
+  - **Adapter**
