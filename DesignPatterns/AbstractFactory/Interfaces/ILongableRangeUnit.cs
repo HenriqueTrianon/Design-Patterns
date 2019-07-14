@@ -1,6 +1,6 @@
-﻿namespace AbstractFactory
+﻿namespace AbstractFactory.Interfaces
 {
-    public interface ILongableRangeUnit
+    public interface ILongableRangeUnit:IUnit
     {
         void Shoot();
     }

@@ -1,10 +1,18 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using AbstractFactory.Entities;
+using AbstractFactory.Interfaces;
 
-namespace AbstractFactory
+namespace AbstractFactory.Factories
 {
-    public class EuropeanFactory
+    public class EuropeanFactory:INationFactory
     {
+        public  ILongableRangeUnit CreateLongableRangeUnit()
+        {
+            return new MedievalArcher();
+        }
+
+        public  IShortableRangeUnit CreateShortableRangeUnit()
+        {
+            return new Knight();
+        }
     }
 }

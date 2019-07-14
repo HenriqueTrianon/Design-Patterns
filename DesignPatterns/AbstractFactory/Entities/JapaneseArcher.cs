@@ -2,15 +2,16 @@
 
 namespace AbstractFactory.Entities
 {
-    public class Samurai:IShortableRangeUnit
+    public class JapaneseArcher : ILongableRangeUnit
     {
         public string Name
         {
-            get => "Samurai";
-        }
-        public void Hit()
+            get => "Japanese Archer";
+        } 
+
+        public void Shoot()
         {
-            
+
         }
     }
 }

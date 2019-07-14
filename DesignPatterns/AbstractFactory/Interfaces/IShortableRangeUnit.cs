@@ -1,10 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace AbstractFactory
+﻿namespace AbstractFactory.Interfaces
 {
-    public interface IShortableRangeUnit
+    public interface IShortableRangeUnit:IUnit
     {
         void Hit();
     }
