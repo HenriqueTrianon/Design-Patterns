@@ -1,7 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-using Adapter;
+﻿using Adapter;
 using Adapter.Adapter;
 using Xunit;
 using Xunit.Abstractions;

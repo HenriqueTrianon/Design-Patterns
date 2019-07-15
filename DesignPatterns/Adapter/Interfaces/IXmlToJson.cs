@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace Adapter.Interface
+﻿namespace Adapter.Interface
 {
     public interface IXmlToJson
     {
