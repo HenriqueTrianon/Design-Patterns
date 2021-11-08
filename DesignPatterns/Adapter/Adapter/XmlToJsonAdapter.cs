@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using Adapter.Interface;
+using Adapter.Interfaces;
 
 namespace Adapter.Adapter
 {

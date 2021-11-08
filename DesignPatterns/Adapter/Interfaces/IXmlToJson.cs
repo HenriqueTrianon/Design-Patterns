@@ -1,4 +1,4 @@
-﻿namespace Adapter.Interface
+﻿namespace Adapter.Interfaces
 {
     public interface IXmlToJson
     {

@@ -16,8 +16,7 @@ namespace DesignPatternsTests
         [Fact]
         public void XmlToJsonAdapterTest()
         {
-            var xmlConverter = new XmlConverter();
-            var adapter = new XmlToJsonAdapter(xmlConverter);
+            var adapter = new XmlToJsonAdapter(new XmlConverter());
             Output.WriteLine(adapter.ConvertXmlToJson());
         }
     }
